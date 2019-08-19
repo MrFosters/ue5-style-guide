@@ -225,7 +225,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Skeletal Mesh           | SK_        |            |                                  |
 | Texture                 | T_         | _?         | See [Textures](#anc-textures)    |
 | Particle System         | PS_        |            |                                  |
-| Widget Blueprint        | WBP_       |            |                                  |
+| Widget Blueprint        | UMG_       |            |                                  |
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
@@ -301,7 +301,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Texture                 | T_         |            |                                  |
-| Texture (Diffuse/Albedo/Base Color)| T_ | _D      |                                  |
+| Texture (Diffuse/Albedo/Base Color)| T_ | _BC     |                                  |
 | Texture (Normal)        | T_         | _N         |                                  |
 | Texture (Roughness)     | T_         | _R         |                                  |
 | Texture (Alpha/Opacity) | T_         | _A         |                                  |
