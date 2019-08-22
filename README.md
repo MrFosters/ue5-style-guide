@@ -301,14 +301,14 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Texture                 | T_         |            |                                  |
-| Texture (Diffuse/Albedo/Base Color)| T_ | _BC     |                                  |
+| Texture (Diffuse/Albedo/Base Color)| T_ | _A     |                                  |
 | Texture (Normal)        | T_         | _N         |                                  |
 | Texture (Roughness)     | T_         | _R         |                                  |
-| Texture (Alpha/Opacity) | T_         | _A         |                                  |
+| Texture (Alpha/Opacity) | T_         | _T         |  Transparency                    |
 | Texture (Ambient Occlusion) | T_     | _O         |                                  |
 | Texture (Bump)          | T_         | _B         |                                  |
 | Texture (Emissive)      | T_         | _E         |                                  |
-| Texture (Mask)          | T_         | _M         |                                  |
+| Texture (Mask)          | T_         | _K         |       masK                          |
 | Texture (Specular)      | T_         | _S         |                                  |
 | Texture (Metallic)      | T_         | _M         |                                  |
 | Texture (Packed)        | T_         | _*         | See notes below about [packing](#anc-textures-packing). |
