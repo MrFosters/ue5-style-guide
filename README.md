@@ -208,7 +208,8 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Static Mesh             | SM_        |            |				       |
 | Skeletal Mesh           | SK_        |            |                                  |
 | Texture                 | T_         | _?         | See [Textures](#anc-textures)    |
-| Particle System         | PS_        |            |                                  |
+| Particle System(Cascade)         | PS_        |            |                                  |
+| Particle System(Niagara)         | NI_        |            |                                  |
 | Widget Blueprint        | UMG_       |            |                                  |
 
 <a name="anc-animations"></a>
