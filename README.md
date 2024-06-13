@@ -112,7 +112,7 @@ Gamemakin LLC is not a lawyer, but please don't introduce illegal actions and be
 
 <a name="anc"></a>
 <a name="1"></a>
-## 1. Asset Naming Conventions ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+## 1. Asset Naming Conventions 
 
 Naming conventions should be treated as law. A project that conforms to a naming convention is able to have its assets managed, searched, parsed, and maintained with incredible ease.
 
@@ -120,7 +120,7 @@ Most things are prefixed with prefixes being generally an acronym of the asset t
 
 <a name="base-asset-name"></a>
 <a name="1.1"></a>
-### 1.1 Base Asset Name - `Prefix_BaseAssetName_Variant_Suffix` ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+### 1.1 Base Asset Name - `Prefix_BaseAssetName_Variant_Suffix` 
 
 All assets should have a _Base Asset Name_. A Base Asset Name represents a logical grouping of related assets. Any asset that is part of this logical group should follow the the standard of  `Prefix_BaseAssetName_Variant_Suffix`.
 
@@ -407,7 +407,7 @@ Note: When using the default renderer in unreal (deferred) is its generally spea
 
 <a name="2"></a>
 <a name="structure"></a>
-## 2. Content Directory Structure ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+## 2. Content Directory Structure 
 
 Equally important as asset names, the directory structure style of a project should be considered law. Asset naming conventions and content directory structure go hand in hand, and a violation of either causes unneeded chaos.
 
@@ -479,7 +479,7 @@ The reasons for this structure are listed in the following sub-sections.
 
 <a name="2.1"></a>
 <a name="structure-folder-names"><a>
-### 2.1 Folder Names ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+### 2.1 Folder Names 
 
 These are common rules for naming any folder in the content structure.
 
@@ -657,7 +657,7 @@ If you find that the content browser has an empty folder you can't delete, you s
 
 <a name="3"></a>
 <a name="bp"></a>
-## 3. Blueprints ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+## 3. Blueprints 
 
 This section will focus on Blueprint classes and their internals. When possible, style rules conform to [Epic's Coding Standard](https://docs.unrealengine.com/latest/INT/Programming/Development/CodingStandard).
 
@@ -685,7 +685,7 @@ Broken blueprints can cause problems that manifest in other ways, such as broken
 
 <a name="3.2"></a>
 <a name="bp-vars"></a>
-### 3.2 Variables ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+### 3.2 Variables 
 
 The words `variable` and `property` may be used interchangably.
 
@@ -707,7 +707,7 @@ The words `variable` and `property` may be used interchangably.
 
 <a name="3.2.1"></a>
 <a name="bp-var-naming"></a>
-#### 3.2.1 Naming ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+#### 3.2.1 Naming 
 
 <a name="3.2.1.1"></a>
 <a name="bp-var-naming-nouns"></a>
@@ -743,7 +743,7 @@ UE5 Blueprint editors know not to include the `b` in user-friendly displays of t
 
 <a name="3.2.1.4"></a>
 <a name="bp-var-bool-names"></a>
-##### 3.2.1.4 Boolean Names ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+##### 3.2.1.4 Boolean Names 
 
 <a name="3.2.1.4.1"></a>
 ###### 3.2.1.4.1 General And Independent State Information 
@@ -835,7 +835,7 @@ Example: If a `BP_Turret` has the ability to target a `BP_PlayerCharacter`, it s
 
 <a name="3.2.1.8"></a>
 <a name="bp-vars-naming-arrays"></a>
-##### 3.2.1.8 Arrays ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+##### 3.2.1.8 Arrays 
 
 Arrays follow the same naming rules as above, but should be named as a plural noun.
 
@@ -844,7 +844,7 @@ Example: Use `Targets`, `Hats`, and `EnemyPlayers`, **not** `TargetList`, `HatAr
 
 <a name="3.2.2"></a>
 <a name="bp-vars-editable"></a>
-#### 3.2.2 Editable Variables ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+#### 3.2.2 Editable Variables 
 
 All variables that are safe to change the value of in order to configure behavior of a blueprint should be marked as `Editable`.
 
@@ -1166,7 +1166,7 @@ All nodes in all blueprint graphs must have a purpose. You should not leave dang
 <a name="4"></a>
 <a name="Static Meshes"></a>
 <a name="s"></a>
-## 4. Static Meshes ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+## 4. Static Meshes 
 
 This section will focus on Static Mesh assets and their internals.
 
@@ -1252,7 +1252,7 @@ All emitters in a Particle System should be named something descriptive and not 
 <a name="6"></a>
 <a name="Levels"></a>
 <a name="levels"></a>
-## 6. Levels / Maps ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+## 6. Levels / Maps 
 
 [See Terminology Note](#terms-level-map) regarding "levels" vs "maps".
 
@@ -1270,7 +1270,7 @@ This section will focus on Level assets and their internals.
 
 <a name="6.1"></a>
 <a name="levels-no-errors-or-warnings"></a>
-### 6.1 No Errors Or Warnings ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+### 6.1 No Errors Or Warnings 
 
 All levels should load with zero errors or warnings. If a level loads with any errors or warnings, they should be fixed immediately to prevent cascading issues.
 
