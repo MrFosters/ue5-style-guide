@@ -161,7 +161,7 @@ Depending on how your asset variants are made, you can chain together variant na
 
 <a name="asset-name-modifiers"></a>
 <a name="1.2"></a>
-### 1.2 Asset Name Modifiers ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2 Asset Name Modifiers 
 
 When naming an asset use these tables to determine the prefix and suffix to use with an asset's [Base Asset Name](#base-asset-name).
 
@@ -193,7 +193,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 <a name="anc-common"></a>
 <a name="1.2.1"></a>
-#### 1.2.1 Most Common ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.1 Most Common 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -205,7 +205,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Level (Gameplay)        |            | _Gameplay  |                                  |
 | Blueprint               | BP_        |            |                                  |
 | Material                | M_         |            |                                  |
-| Static Mesh             | SM_         |            |				       |
+| Static Mesh             | SM_        |            |				       |
 | Skeletal Mesh           | SK_        |            |                                  |
 | Texture                 | T_         | _?         | See [Textures](#anc-textures)    |
 | Particle System         | PS_        |            |                                  |
@@ -213,7 +213,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
-#### 1.2.2 Animations ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.2 Animations
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -231,10 +231,11 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Rig                     | Rig_       |            |                                  |
 | Skeletal Mesh           | SK_        |            |                                  |
 | Skeleton                | SKEL_      |            |                                  |
+| IK Retargeter           | RTG_       |            |                                  |
 
 <a name="anc-ai"></a>
 <a name="1.2.3"></a>
-### 1.2.3 Artificial Intelligence ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.3 Artificial Intelligence
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -249,7 +250,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 <a name="anc-bp"></a>
 <a name="1.2.4"></a>
-### 1.2.4 Blueprints ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.4 Blueprints 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -266,7 +267,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 <a name="anc-materials"></a>
 <a name="1.2.5"></a>
-### 1.2.5 Materials ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.5 Materials 
 
 | Asset Type                    | Prefix     | Suffix     | Notes                            |
 | ----------------------------- | ---------- | ---------- | -------------------------------- |
@@ -281,7 +282,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 <a name="anc-textures"></a>
 <a name="1.2.6"></a>
-### 1.2.6 Textures ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.6 Textures 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -316,7 +317,7 @@ Note: When using the default renderer in unreal (deferred) is its generally spea
 
 <a name="anc-misc"></a>
 <a name="1.2.7"></a>
-### 1.2.7 Miscellaneous ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.7 Miscellaneous 
 
 | Asset Type                 | Prefix     | Suffix     | Notes                            |
 | -------------------------- | ---------- | ---------- | -------------------------------- |
@@ -344,7 +345,7 @@ Note: When using the default renderer in unreal (deferred) is its generally spea
 
 <a name="anc-paper2d"></a>
 <a name="1.2.8"></a>
-### 1.2.8 Paper 2D ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.8 Paper 2D 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -356,7 +357,7 @@ Note: When using the default renderer in unreal (deferred) is its generally spea
 
 <a name="anc-physics"></a>
 <a name="1.2.9"></a>
-### 1.2.9 Physics ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.9 Physics 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -366,7 +367,7 @@ Note: When using the default renderer in unreal (deferred) is its generally spea
 
 <a name="anc-sounds"></a>
 <a name="1.2.10"></a>
-### 1.2.10 Sounds ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.10 Sounds 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -383,7 +384,7 @@ Note: When using the default renderer in unreal (deferred) is its generally spea
 
 <a name="anc-ui"></a>
 <a name="1.2.11"></a>
-### 1.2.11 User Interface ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.11 User Interface 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -394,7 +395,7 @@ Note: When using the default renderer in unreal (deferred) is its generally spea
 
 <a name="anc-effects"></a>
 <a name="1.2.12"></a>
-### 1.2.12 Effects ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.12 Effects 
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -412,18 +413,17 @@ Equally important as asset names, the directory structure style of a project sho
 
 There are multiple ways to lay out the content of a UE5 project. In this style, we will be using a structure that relies more on filtering and search abilities of the Content Browser for those working with assets to find assets of a specific type instead of another common structure that groups asset types with folders.
 
-> If you are using the prefix [naming convention](#1.2) above, using folders to contain assets of similar types such as `Meshes`, `Textures`, and `Materials` is a redundant practice as asset types are already both sorted by prefix as well as able to be filtered in the content browser.
-
 <a name="2e1"><a>
 ### 2e1 Example Project Content Structure
 <pre>
 |-- Content
-    |-- <a href="#2.2">GenericShooter</a>
+    |-- <a href="#2.2">BI420 Simulator</a>
         |-- Art
-        |   |-- Industrial
-        |   |   |-- Ambient
-        |   |   |-- Machinery
-        |   |   |-- Pipes
+        |   |-- Aircraft_01
+        |   |   |-- Textures
+        |   |   |-- Materials
+        |   |   |-- Meshes
+	|   |   |-- Animations
         |   |-- Nature
         |   |   |-- Ambient
         |   |   |-- Foliage
@@ -431,41 +431,29 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |   |   |-- Trees
         |   |-- Office
         |-- Characters
-        |   |-- Bob
+        |   |-- Pilot_01
         |   |-- Common
         |   |   |-- <a href="#2.7">Animations</a>
         |   |   |-- Audio
-        |   |-- Jack
+        |   |-- Pilot_02
         |   |-- Steve
         |   |-- <a href="#2.1.3">Zoe</a>
         |-- <a href="#2.5">Core</a>
         |   |-- Characters
         |   |-- Engine
         |   |-- <a href="#2.1.2">GameModes</a>
-        |   |-- Interactables
-        |   |-- Pickups
-        |   |-- Weapons
         |-- Effects
         |   |-- Electrical
         |   |-- Fire
         |   |-- Weather
         |-- <a href="#2.4">Maps</a>
-        |   |-- Campaign1
-        |   |-- Campaign2
+        |   |-- Hangar
+        |   |-- Runway
+        |   |-- Airport
         |-- <a href="#2.8">MaterialLibrary</a>
         |   |-- Debug
-        |   |-- Metal
-        |   |-- Paint
-        |   |-- Utility
-        |   |-- Weathering
-        |-- Placeables
-        |   |-- Pickups
-        |-- Weapons
-            |-- Common
-            |-- Pistols
-            |   |-- DesertEagle
-            |   |-- RocketPistol
-            |-- Rifles
+        |   |-- CoreMaterials
+
 </pre>
 
 The reasons for this structure are listed in the following sub-sections.
@@ -496,19 +484,19 @@ The reasons for this structure are listed in the following sub-sections.
 These are common rules for naming any folder in the content structure.
 
 <a name="2.1.1"></a>
-#### 2.1.1 Always Use PascalCase[<sup>*</sup>](#terms-cases) ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 2.1.1 Always Use PascalCase[<sup>*</sup>](#terms-cases) 
 
 PascalCase refers to starting a name with a capital letter and then instead of using spaces, every following word also starts with a capital letter. For example, `DesertEagle`, `RocketPistol`, and `ASeriesOfWords`.
 
 See [Cases](#terms-cases).
 
 <a name="2.1.2"></a>
-#### 2.1.2 Never Use Spaces ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 2.1.2 Never Use Spaces 
 
 Re-enforcing [2.1.1](#2.1.1), never use spaces. Spaces can cause various engineering tools and batch processes to fail. Ideally your project's root also contains no spaces and is located somewhere such as `D:\Project` instead of `C:\Users\My Name\My Documents\Unreal Projects`.
 
 <a name="2.1.3"></a>
-#### 2.1.3 Never Use Unicode Characters And Other Symbols ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 2.1.3 Never Use Unicode Characters And Other Symbols 
 
 If one of your game characters is named 'Zoë', its folder name should be `Zoe`. Unicode characters can be worse than [Spaces](#2.1.2) for engineering tool and some parts of UE5 don't support Unicode characters in paths either.
 
@@ -518,7 +506,7 @@ Using other characters outside `a-z`, `A-Z`, and `0-9` such as `@`, `-`, `_`, `,
 
 <a name="2.2"></a>
 <a name="structure-top-level"><a>
-### 2.2 Use A Top Level Folder For Project Specific Assets ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 2.2 Use A Top Level Folder For Project Specific Assets 
 
 All of a project's assets should exist in a folder named after the project. For example, if your project is named 'Generic Shooter', _all_ of it's content should exist in `Content/GenericShooter`.
 
@@ -584,7 +572,7 @@ Once the assets are ready for use, an artist simply has to move the assets into 
 
 <a name="2.4"></a>
 <a name="structure-maps"></a>
-### 2.4 All Map[<sup>*</sup>](#terms-level-map) Files Belong In A Folder Called Maps ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 2.4 All Map[<sup>*</sup>](#terms-level-map) Files Belong In A Folder Called Maps 
 
 Map files are incredibly special and it is common for every project to have its own map naming system, especially if they work with sub-levels or streaming levels. No matter what system of map organization is in place for the specific project, all levels should belong in `/Content/Project/Maps`.
 
@@ -604,15 +592,15 @@ For example if your project requires pickups that can be placed in a level, ther
 
 <a name="2.6"></a>
 <a name="structure-assettypes"></a>
-### 2.6 Do Not Create Folders Called `Assets` or `AssetTypes` ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 2.6 Do Not Create Folders Called `Assets` or `AssetTypes` 
 
 <a name="2.6.1"></a>
-#### 2.6.1 Creating a folder named `Assets` is redundant. ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 2.6.1 Creating a folder named `Assets` is redundant. 
 
 All assets are assets.
 
 <a name="2.6.2"></a>
-#### 2.6.2 Creating a folder named `Meshes`, `Textures`, or `Materials` is redundant. ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 2.6.2 Creating a folder named `Meshes`, `Textures`, or `Materials` is redundant. 
 
 All asset names are named with their asset type in mind. These folders offer only redundant information and the use of these folders can easily be replaced with the robust and easy to use filtering system the Content Browser provides.
 
@@ -687,7 +675,7 @@ Remember: Blueprinting badly bears blunders, beware! (Phrase by [KorkuVeren](htt
 
 <a name="3.1"></a>
 <a name="bp-compiling"></a>
-### 3.1 Compiling ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 3.1 Compiling 
 
 All blueprints should compile with zero warnings and zero errors. You should fix blueprint warnings and errors immediately as they can quickly cascade into very scary unexpected behavior.
 
@@ -729,7 +717,7 @@ All non-boolean variable names must be clear, unambiguous, and descriptive nouns
 
 <a name="3.2.1.2"></a>
 <a name="bp-var-naming-case"></a>
-##### 3.2.1.2 PascalCase ![#](https://img.shields.io/badge/lint-supported-green.svg)
+##### 3.2.1.2 PascalCase 
 
 All non-boolean variables should be in the form of [PascalCase](#terms-cases).
 
@@ -745,7 +733,7 @@ All non-boolean variables should be in the form of [PascalCase](#terms-cases).
 
 <a name="3.2.1.3"></a>
 <a name="bp-var-bool-prefix"></a>
-##### 3.2.1.3 Boolean `b` Prefix ![#](https://img.shields.io/badge/lint-supported-green.svg)
+##### 3.2.1.3 Boolean `b` Prefix 
 
 All booleans should be named in PascalCase but prefixed with a lowercase `b`.
 
@@ -758,7 +746,7 @@ UE5 Blueprint editors know not to include the `b` in user-friendly displays of t
 ##### 3.2.1.4 Boolean Names ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
 
 <a name="3.2.1.4.1"></a>
-###### 3.2.1.4.1 General And Independent State Information ![#](https://img.shields.io/badge/lint-supported-green.svg)
+###### 3.2.1.4.1 General And Independent State Information 
 
 All booleans should be named as descriptive adjectives when possible if representing general information. Do not include words that phrase the variable as a question, such as `Is`. This is reserved for functions.
 
@@ -808,7 +796,7 @@ All of these variables are named redundantly. It is implied that the variable is
 
 <a name="3.2.1.6"></a>
 <a name="bp-vars-naming-atomic"></a>
-##### 3.2.1.6 Do _Not_ Include Atomic Type Names ![#](https://img.shields.io/badge/lint-supported-green.svg)
+##### 3.2.1.6 Do _Not_ Include Atomic Type Names 
 
 Atomic or primitive variables are variables that represent data in their simplest form, such as booleans, integers, floats, and enumerations.
 
@@ -866,7 +854,7 @@ Do not arbitrarily mark variables as `Editable`.
 
 <a name="3.2.2.1"></a>
 <a name="bp-vars-editable-tooltips"></a>
-##### 3.2.2.1 Tooltips ![#](https://img.shields.io/badge/lint-supported-green.svg)
+##### 3.2.2.1 Tooltips 
 
 All `Editable` variables, including those marked editable just so they can be marked as `Expose On Spawn`, should have a description in their `Tooltip` fields that explains how changing this value affects the behavior of the blueprint.
 
@@ -884,7 +872,7 @@ A Value Range only needs to be defined if the bounds of a value are known. While
 
 <a name="3.2.3"></a>
 <a name="bp-vars-categories"></a>
-#### 3.2.3 Categories ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 3.2.3 Categories 
 
 If a class has only a small number of variables, categories are not required.
 
@@ -940,7 +928,7 @@ Because of this, all transient variables should always be initialized as zero or
 
 <a name="3.2.7"></a>
 <a name="bp-vars-config"></a>
-#### 3.2.8 Config Variables ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 3.2.8 Config Variables 
 
 Do not use the `Config Variable` flag. This makes it harder for designers to control blueprint behavior. Config variables should only be used in C++ for rarely changed variables. Think of them as `Advanced Advanced Display` variables.
 
@@ -1077,7 +1065,7 @@ Bad examples:
 
 <a name="3.3.2"></a>
 <a name="bp-funcs-return"></a>
-#### 3.3.2 All Functions Must Have Return Nodes ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 3.3.2 All Functions Must Have Return Nodes 
 
 All functions must have return nodes, no exceptions.
 
@@ -1089,7 +1077,7 @@ In situations like where a programmer may add a pin to a Sequence node or add lo
 
 <a name="3.3.3"></a>
 <a name="bp-graphs-funcs-node-limit"></a>
-#### 3.3.3 No Function Should Have More Than 50 Nodes ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 3.3.3 No Function Should Have More Than 50 Nodes 
 
 Simply, no function should have more than 50 nodes. Any function this big should be broken down into smaller functions for readability and ease of maintenance.
 
@@ -1105,7 +1093,7 @@ The following nodes are not counted as they are deemed to not increase function 
 
 <a name="3.3.4"></a>
 <a name="bp-graphs-funcs-description"></a>
-#### 3.3.4 All Public Functions Should Have A Description ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 3.3.4 All Public Functions Should Have A Description 
 
 This rule applies more to public facing or marketplace blueprints, so that others can more easily navigate and consume your blueprint API.
 
@@ -1196,19 +1184,19 @@ This section will focus on Static Mesh assets and their internals.
 
 <a name="4.1"></a>
 <a name="s-uvs"></a>
-### 4.1 Static Mesh UVs ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 4.1 Static Mesh UVs 
 
 If Linter is reporting bad UVs and you can't seem to track it down, open the resulting `.log` file in your project's `Saved/Logs` folder for exact details as to why its failing. I am hoping to include these messages in the Lint report in the future.
 
 <a name="4.1.1"></a>
 <a name="s-uvs-no-missing"></a>
-#### 4.1.1 All Meshes Must Have UVs ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 4.1.1 All Meshes Must Have UVs 
 
 Pretty simple. All meshes, regardless how they are to be used, should not be missing UVs.
 
 <a name="4.1.2"></a>
 <a name="s-uvs-no-overlapping"></a>
-#### 4.1.2 All Meshes Must Not Have Overlapping UVs for Lightmaps ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 4.1.2 All Meshes Must Not Have Overlapping UVs for Lightmaps 
 
 Pretty simple. All meshes, regardless how they are to be used, should have valid non-overlapping UVs.
 
@@ -1244,7 +1232,7 @@ This is a subjective check on a per-project basis, however all assets should be 
 <a name="5"></a>
 <a name="Particle Systems"></a>
 <a name="ps"></a>
-## 5. Particle Systems ![#](https://img.shields.io/badge/lint-supported-green.svg)
+## 5. Particle Systems 
 
 This section will focus on Particle System assets and their internals.
 
@@ -1254,7 +1242,7 @@ This section will focus on Particle System assets and their internals.
 
 <a name="5.1"></a>
 <a name="ps-emitter-naming"></a>
-### 5.1 Emitter Naming ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 5.1 Emitter Naming 
 
 All emitters in a Particle System should be named something descriptive and not left to their default name "Particle Emitter".
 
