@@ -308,7 +308,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 <a name="anc-textures-packing"></a>
 <a name="1.2.6.1"></a>
-#### 1.2.6.1 Texture Packing ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 1.2.6.1 Texture Packing 
 It is common practice to pack multiple layers of texture data into one texture. An example of this is packing Emissive, Roughness, Ambient Occlusion together as the Red, Green, and Blue channels of a texture respectively. To determine the suffix, simply stack the given suffix letters from above together, e.g. `_ARM`. 
 
 Packing 4 channels of data into a texture (RGBA) is not recommended as a texture with an alpha channel incurs double the overhead than one without. See the comparison on the right, memory usage is doubled by the inclusion of the alpha channel.
@@ -560,7 +560,7 @@ If your project plans to release DLC or has multiple sub-projects associated wit
 
 <a name="2.3"></a>
 <a name="structure-developers"></a>
-### 2.3 Use Developers Folder For Local Testing ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 2.3 Use Developers Folder For Local Testing 
 
 During a project's development, it is very common for team members to have a sort of 'sandbox' where they can experiment freely without risking the core project. Because this work may be ongoing, these team members may wish to put their assets on a project's source control server. Not all teams require use of Developer folders, but ones that do use them often run into a common problem with assets submitted to source control.
 
@@ -582,7 +582,7 @@ This also simplifies the job of cooking for engineers. Wrangling levels for a bu
 
 <a name="2.5"></a>
 <a name="structure-core"></a>
-### 2.5 Use A `Core` Folder For Critical Blueprints And Other Assets ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 2.5 Use A `Core` Folder For Critical Blueprints And Other Assets 
 
 Use `/Content/Project/Core` folder for assets that are absolutely fundamental to a project's workings. For example, base `GameMode`, `Character`, `PlayerController`, `GameState`, `PlayerState`, and related Blueprints should live here.
 
@@ -612,7 +612,7 @@ Not doing this also prevents the inevitability of someone putting a static mesh 
 
 <a name="2.7"></a>
 <a name="structure-large-sets"></a>
-### 2.7 Very Large Asset Sets Get Their Own Folder Layout ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 2.7 Very Large Asset Sets Get Their Own Folder Layout 
 
 This can be seen as a pseudo-exception to [2.6](#2.6).
 
@@ -624,7 +624,7 @@ For example, animations that are shared across multiple characters should lay in
 
 <a name="2.8"></a>
 <a name="structure-material-library"></a>
-### 2.8 `MaterialLibrary` ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 2.8 `MaterialLibrary` 
 
 If your project makes use of master materials, layered materials, or any form of reusable materials or textures that do not belong to any subset of assets, these assets should be located in `Content/Project/MaterialLibrary`.
 
@@ -638,7 +638,7 @@ Any testing or debug materials should be within `MaterialLibrary/Debug`. This al
 
 <a name="2.9"></a>
 <a name="structure-no-empty-folders"></a>
-### 2.9 No Empty Folders ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 2.9 No Empty Folders 
 
 There simply shouldn't be any empty folders. They clutter the content browser.
 
@@ -711,7 +711,7 @@ The words `variable` and `property` may be used interchangably.
 
 <a name="3.2.1.1"></a>
 <a name="bp-var-naming-nouns"></a>
-##### 3.2.1.1 Nouns ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+##### 3.2.1.1 Nouns 
 
 All non-boolean variable names must be clear, unambiguous, and descriptive nouns.
 
@@ -755,7 +755,7 @@ Example: Use `bDead` and `bHostile` **not** `bIsDead` and `bIsHostile`.
 Try to not use verbs such as `bRunning`. Verbs tend to lead to complex states.
 
 <a name="3.2.1.4.2"></a>
-###### 3.2.1.4.2 Complex States ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+###### 3.2.1.4.2 Complex States 
 
 Do not to use booleans to represent complex and/or dependent states. This makes state adding and removing complex and no longer easily readable. Use an enumeration instead.
 
@@ -765,7 +765,7 @@ Example: Do **not** use `bRunning` if you also need `bWalking` or `bSprinting`. 
 
 <a name="3.2.1.5"></a>
 <a name="bp-vars-naming-context"></a>
-##### 3.2.1.5 Considered Context ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+##### 3.2.1.5 Considered Context 
 
 All variable names must not be redundant with their context as all variable references in Blueprint will always have context.
 
@@ -816,7 +816,7 @@ Example: A fence generator needs to generate X number of posts. Store X in `NumP
 
 <a name="3.2.1.7"></a>
 <a name="bp-vars-naming-complex"></a>
-##### 3.2.1.7 Do Include Non-Atomic Type Names ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+##### 3.2.1.7 Do Include Non-Atomic Type Names 
 
 Non-atomic or complex variables are variables that represent data as a collection of atomic variables. Structs, Classes, Interfaces, and primitives with hidden behavior such as `Text` and `Name` all qualify under this rule.
 
@@ -860,7 +860,7 @@ All `Editable` variables, including those marked editable just so they can be ma
 
 <a name="3.2.2.2"></a>
 <a name="bp-vars-editable-ranges"></a>
-##### 3.2.2.2 Slider And Value Ranges ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+##### 3.2.2.2 Slider And Value Ranges 
 
 All `Editable` variables should make use of slider and value ranges if there is ever a value that a variable should _not_ be set to.
 
@@ -896,7 +896,7 @@ Example: A weapon class set of variables might be organized as:
 
 <a name="3.2.4"></a>
 <a name="bp-vars-access"></a>
-#### 3.2.4 Variable Access Level ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.2.4 Variable Access Level 
 
 In C++, variables have a concept of access level. Public means any code outside the class can access the variable. Protected means only the class and any child classes can access this variable internally. Private means only this class and no child classes can access this variable.
 
@@ -906,13 +906,13 @@ Treat `Editable` variables as public variables. Treat non-editable variables as 
 
 <a name="3.2.4.1"></a>
 <a name="bp-vars-access-private"></a>
-##### 3.2.4.1 Private Variables ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+##### 3.2.4.1 Private Variables 
 
 Unless it is known that a variable should only be accessed within the class it is defined and never a child class, do not mark variables as private. Until variables are able to be marked `protected`, reserve private for when you absolutely know you want to restrict child class usage.
 
 <a name="3.2.5"></a>
 <a name="bp-vars-advanced"></a>
-#### 3.2.5 Advanced Display ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.2.5 Advanced Display 
 
 If a variable should be editable but often untouched, mark it as `Advanced Display`. This makes the variable hidden unless the advanced display arrow is clicked.
 
@@ -920,7 +920,7 @@ To find the `Advanced Display` option, it is listed as an advanced displayed var
 
 <a name="3.2.6"></a>
 <a name="bp-vars-transient"></a>
-#### 3.2.6 Transient Variables ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.2.6 Transient Variables 
 
 Transient variables are variables that do not need to have their value saved and loaded and have an initial value of zero or null. This is useful for references to other objects and actors who's value isn't known until run-time. This prevents the editor from ever saving a reference to it, and speeds up saving and loading of the blueprint class.
 
@@ -934,13 +934,13 @@ Do not use the `Config Variable` flag. This makes it harder for designers to con
 
 <a name="3.3"></a>
 <a name="bp-functions"></a>
-### 3.3 Functions, Events, and Event Dispatchers ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 3.3 Functions, Events, and Event Dispatchers 
 
 This section describes how you should author functions, events, and event dispatchers. Everything that applies to functions also applies to events, unless otherwise noted.
 
 <a name="3.3.1"></a>
 <a name="bp-funcs-naming"></a>
-#### 3.3.1 Function Naming ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.3.1 Function Naming 
 
 The naming of functions, events, and event dispatchers is critically important. Based on the name alone, certain assumptions can be made about functions. For example:
 
@@ -954,7 +954,7 @@ These questions and more can all be answered when functions are named appropriat
 
 <a name="3.3.1.1"></a>
 <a name="bp-funcs-naming-verbs"></a>
-#### 3.3.1.1 All Functions Should Be Verbs ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.3.1.1 All Functions Should Be Verbs 
 
 All functions and events perform some form of action, whether its getting info, calculating data, or causing something to explode. Therefore, all functions should all start with verbs. They should be worded in the present tense whenever possible. They should also have some context as to what they are doing.
 
@@ -983,13 +983,13 @@ Bad examples:
 
 <a name="3.3.1.2"></a>
 <a name="bp-funcs-naming-onrep"></a>
-#### 3.3.1.2 Property RepNotify Functions Always `OnRep_Variable` ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.3.1.2 Property RepNotify Functions Always `OnRep_Variable` 
 
 All functions for replicated with notification variables should have the form `OnRep_Variable`. This is forced by the Blueprint editor. If you are writing a C++ `OnRep` function however, it should also follow this convention when exposing it to Blueprints.
 
 <a name="3.3.1.3"></a>
 <a name="bp-funcs-naming-bool"></a>
-#### 3.3.1.3 Info Functions Returning Bool Should Ask Questions ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.3.1.3 Info Functions Returning Bool Should Ask Questions 
 
 When writing a function that does not change the state of or modify any object and is purely for getting information, state, or computing a yes/no value, it should ask a question. This should also follow [the verb rule](#bp-funcs-naming-verbs).
 
@@ -1016,7 +1016,7 @@ Bad examples:
 
 <a name="3.3.1.4"></a>
 <a name="bp-funcs-naming-eventhandlers"></a>
-#### 3.3.1.4 Event Handlers and Dispatchers Should Start With `On` ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.3.1.4 Event Handlers and Dispatchers Should Start With `On` 
 
 Any function that handles an event or dispatches an event should start with `On` and continue to follow [the verb rule](#bp-funcs-naming-verbs). The verb may move to the end however if past-tense reads better.
 
@@ -1043,7 +1043,7 @@ Bad examples:
 
 <a name="3.3.1.5"></a>
 <a name="bp-funcs-naming-rpcs"></a>
-#### 3.3.1.5 Remote Procedure Calls Should Be Prefixed With Target ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.3.1.5 Remote Procedure Calls Should Be Prefixed With Target 
 
 Any time an RPC is created, it should be prefixed with either `Server`, `Client`, or `Multicast`. No exceptions.
 
@@ -1101,7 +1101,7 @@ Simply, any function that has an access specificer of Public should have its des
 
 <a name="3.3.5"></a>
 <a name="bp-graphs-funcs-plugin-category"></a>
-#### 3.3.5 All Custom Static Plugin `BlueprintCallable` Functions Must Be Categorized By Plugin Name ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.3.5 All Custom Static Plugin `BlueprintCallable` Functions Must Be Categorized By Plugin Name 
 
 If your project includes a plugin that defines `static` `BlueprintCallable` functions, they should have their category set to the plugin's name or a subset category of the plugin's name.
 
@@ -1109,19 +1109,19 @@ For example, `Zed Camera Interface` or `Zed Camera Interface | Image Capturing`.
 
 <a name="3.4"></a>
 <a name="bp-graphs"></a>
-### 3.4 Blueprint Graphs ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 3.4 Blueprint Graphs 
 
 This section covers things that apply to all Blueprint graphs.
 
 <a name="3.4.1"></a>
 <a name="bp-graphs-spaghetti"></a>
-#### 3.4.1 No Spaghetti ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.4.1 No Spaghetti 
 
 Wires should have clear beginnings and ends. You should never have to mentally untangle wires to make sense of a graph. Many of the following sections are dedicated to reducing spaghetti.
 
 <a name="3.4.2"></a>
 <a name="bp-graphs-align-wires"></a>
-#### 3.4.2 Align Wires Not Nodes ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.4.2 Align Wires Not Nodes 
 
 Always align wires, not nodes. You can't always control the size and pin location on a node, but you can always control the location of a node and thus control the wires. Straight wires provide clear linear flow. Wiggly wires wear wits wickedly. You can straighten wires by using the Straigten Connections command with BP nodes selected. Hotkey: Q
 
@@ -1136,19 +1136,19 @@ Acceptable Example: Certain nodes might not cooperate no matter how you use the 
 
 <a name="3.4.3"></a>
 <a name="bp-graphs-exec-first-class"></a>
-#### 3.4.3 White Exec Lines Are Top Priority ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.4.3 White Exec Lines Are Top Priority 
 
 If you ever have to decide between straightening a linear white exec line or straightening data lines of some kind, always straighten the white exec line.
 
 <a name="3.4.4"></a>
 <a name="bp-graphs-block-comments"></a>
-#### 3.4.4 Graphs Should Be Reasonably Commented ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.4.4 Graphs Should Be Reasonably Commented 
 
 Blocks of nodes should be wrapped in comments that describe their higher-level behavior. While every function should be well named so that each individual node is easily readable and understandable, groups of nodes contributing to a purpose should have their purpose described in a comment block. If a function does not have many blocks of nodes and its clear that the nodes are serving a direct purpose in the function's goal, then they do not need to be commented as the function name and  description should suffice.
 
 <a name="3.4.5"></a>
 <a name="bp-graphs-cast-error-handling"></a>
-#### 3.4.5 Graphs Should Handle Casting Errors Where Appropriate ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.4.5 Graphs Should Handle Casting Errors Where Appropriate 
 
 If a function or event assumes that a cast always succeeds, it should appropriately report a failure in logic if the cast fails. This lets others know why something that is 'supposed to work' doesn't. A function should also attempt a graceful recover after a failed cast if its known that the reference being casted could ever fail to be casted.
 
@@ -1156,7 +1156,7 @@ This does not mean every cast node should have its failure handled. In many case
 
 <a name="3.4.6"></a>
 <a name="bp-graphs-dangling-nodes"></a>
-#### 3.4.6 Graphs Should Not Have Any Dangling / Loose / Dead Nodes ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+#### 3.4.6 Graphs Should Not Have Any Dangling / Loose / Dead Nodes 
 
 All nodes in all blueprint graphs must have a purpose. You should not leave dangling blueprint nodes around that have no purpose or are not executed.
 
@@ -1202,13 +1202,13 @@ Pretty simple. All meshes, regardless how they are to be used, should have valid
 
 <a name="4.2"></a>
 <a name="s-lods"></a>
-### 4.2 LODs Should Be Set Up Correctly ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 4.2 LODs Should Be Set Up Correctly 
 
 This is a subjective check on a per-project basis, but as a general rule any mesh that can be seen at varying distances should have proper LODs.
 
 <a name="4.3"></a>
 <a name="s-modular-snapping"></a>
-### 4.3 Modular Socketless Assets Should Snap To The Grid Cleanly ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 4.3 Modular Socketless Assets Should Snap To The Grid Cleanly 
 
 This is a subjective check on a per-asset basis, however any modular socketless assets should snap together cleanly based on the project's grid settings.
 
@@ -1216,13 +1216,13 @@ It is up to the project whether to snap based on a power of 2 grid or on a base 
 
 <a name="4.4"></a>
 <a name="s-collision"></a>
-### 4.4 All Meshes Must Have Collision ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 4.4 All Meshes Must Have Collision 
 
 Regardless of whether an asset is going to be used for collision in a level, all meshes should have proper collision defined. This helps the engine with things such as bounds calculations, occlusion, and lighting. Collision should also be well-formed to the asset.
 
 <a name="4.5"></a>
 <a name="s-scaled"></a>
-### 4.5 All Meshes Should Be Scaled Correctly ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 4.5 All Meshes Should Be Scaled Correctly 
 
 This is a subjective check on a per-project basis, however all assets should be scaled correctly to their project. Level designers or blueprint authors should not have to tweak the scale of meshes to get them to confirm in the editor. Scaling meshes in the engine should be treated as a scale override, not a scale correction.
 
@@ -1280,25 +1280,25 @@ Please note: Linter is even more strict on this than the editor is currently, an
 
 <a name="6.2"></a>
 <a name="levels-lighting-should-be-built"></a>
-### 6.2 Lighting Should Be Built ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 6.2 Lighting Should Be Built 
 
 It is normal during development for levels to occasionaly not have lighting built. When doing a test/internal/shipping build or any build that is to be distributed however, lighting should always be built.
 
 <a name="6.3"></a>
 <a name="levels-no-visible-z-fighting"></a>
-### 6.3 No Player Visible Z Fighting ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 6.3 No Player Visible Z Fighting 
 
 Levels should not have any [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) in all areas visible to the player. 
 
 <a name="6.4"></a>
 <a name="levels-mp-rules"></a>
-### 6.4 Marketplace Specific Rules ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 6.4 Marketplace Specific Rules 
 
 If a project is to be sold on the UE5 Marketplace, it must follow these rules.
 
 <a name="6.4.1"></a>
 <a name="levels-mp-rules-overview"></a>
-### 6.4.1 Overview Level ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 6.4.1 Overview Level 
 
 If your project contains assets that should be visualized or demoed, you must have a map within your project that contains the name "Overview".
 
@@ -1308,7 +1308,7 @@ For example, `InteractionComponent_Overview`.
 
 <a name="6.4.2"></a>
 <a name="levels-mp-rules-demo"></a>
-### 6.4.2 Demo Level ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 6.4.2 Demo Level 
 
 If your project contains assets that should be demoed or come with some sort of tutorial, you must have a map within your project that contains the name "Demo". This level should also contain documentation within it in some form that illustrates how to use your project. See Epic's Content Examples project for good examples on how to do this.
 
@@ -1321,7 +1321,7 @@ For example, `InteractionComponent_Overview_Demo`, `ExplosionKit_Demo`.
 
 <a name="7"></a>
 <a name="textures"></a>
-## 7. Textures ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+## 7. Textures 
 
 This section will focus on Texture assets and their internals.
 
@@ -1337,7 +1337,7 @@ This section will focus on Texture assets and their internals.
 
 <a name="7.1"></a>
 <a name="textures-dimensions"></a>
-### 7.1 Dimensions Are Powers of 2 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 7.1 Dimensions Are Powers of 2 
 
 All textures, except for UI textures, must have its dimensions in multiples of powers of 2. Textures do not have to be square.
 
@@ -1345,7 +1345,7 @@ For example, `128x512`, `1024x1024`, `2048x1024`, `1024x2048`, `1x512`.
 
 <a name="7.2"></a>
 <a name="textures-density"></a>
-### 7.2 Texture Density Should Be Uniform ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 7.2 Texture Density Should Be Uniform 
 
 All textures should be of a size appropriate for their standard use case. Appropriate texture density varies from project to project, but all textures within that project should have a consistent density.
 
@@ -1353,13 +1353,13 @@ For example, if a project's texture density is 8 pixel per 1 unit, a texture tha
 
 <a name="7.3"></a>
 <a name="textures-max-size"></a>
-### 7.3 Textures Should Be No Bigger than 8192 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 7.3 Textures Should Be No Bigger than 8192 
 
 No texture should have a dimension that exceeds 8192 in size, unless you have a very explicit reason to do so. Often, using a texture this big is simply just a waste of resources.
 
 <a name="7.4"></a>
 <a name="textures-group"></a>
-### 7.4 Textures Should Be Grouped Correctly ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+### 7.4 Textures Should Be Grouped Correctly 
 
 Every texture has a Texture Group property used for LODing, and this should be set correctly based on its use. For example, all UI textures should belong in the UI texture group.
 
