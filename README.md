@@ -26,15 +26,11 @@ There are a few different ways you can name things. Here are some common casing 
 
 > ###### PascalCase
 >
-> Capitalize every word and remove all spaces, e.g. `DesertEagle`, `StyleGuide`, `ASeriesOfWords`.
+> Capitalize every word and remove all spaces, e.g. `DesertEagle`, `StyleGuide`, `ASeriesOfWords`.  Use this for class names and variables.
 > 
 > ###### camelCase
 >
-> The first letter is always lowercase but every following word starts with uppercase, e.g. `desertEagle`, `styleGuide`, `aSeriesOfWords`.
->
-> ###### Snake_case
->
-> Words can arbitrarily start upper or lowercase but words are separated by an underscore, e.g. `desert_Eagle`, `Style_Guide`, `a_Series_of_Words`.
+> The first letter is always lowercase but every following word starts with uppercase, e.g. `desertEagle`, `styleGuide`, `aSeriesOfWords`. Use this for functions.
 
 <a name="terms-var-prop"></a>
 ##### Variables / Properties
@@ -153,9 +149,9 @@ Depending on how your asset variants are made, you can chain together variant na
 
 | Asset Type              | Asset Name                                                 |
 | ----------------------- | ---------------------------------------------------------- |
-| Static Mesh (01)        | S_Rock_01                                                  |
-| Static Mesh (02)        | S_Rock_02                                                  |
-| Static Mesh (03)        | S_Rock_03                                                  |
+| Static Mesh (01)        | SM_Rock_01                                                  |
+| Static Mesh (02)        | SM_Rock_02                                                  |
+| Static Mesh (03)        | SM_Rock_03                                                  |
 | Material                | M_Rock                                                     |
 | Material Instance (Snow)| MI_Rock_Snow                                               |
 
@@ -425,12 +421,17 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |   |   |-- Materials
         |   |   |-- Meshes
 	|   |   |-- Animations
-        |   |-- Nature
+	|   |-- Aircraft_02
+        |   |   |-- Textures
+        |   |   |-- Materials
+        |   |   |-- Meshes
+	|   |   |-- Animations
+        |   |-- Envrionment
         |   |   |-- Ambient
         |   |   |-- Foliage
         |   |   |-- Rocks
         |   |   |-- Trees
-        |   |-- Office
+        |   |	|-- Office
         |-- Characters
         |   |-- Pilot_01
         |   |-- Common
@@ -443,6 +444,8 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |   |-- Characters
         |   |-- Engine
         |   |-- <a href="#2.1.2">GameModes</a>
+	|   |-- <a href="#2.8">MaterialLibrary</a>
+        |   |-- Debug
         |-- Effects
         |   |-- Electrical
         |   |-- Fire
@@ -451,9 +454,8 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |   |-- Hangar
         |   |-- Runway
         |   |-- Airport
-        |-- <a href="#2.8">MaterialLibrary</a>
-        |   |-- Debug
-        |   |-- CoreMaterials
+
+
 
 </pre>
 
@@ -503,7 +505,7 @@ If one of your game characters is named 'Zoë', its folder name should be `Zoe`.
 
 Related to this, if your project has [unexplained issues](https://answers.unrealengine.com/questions/101207/undefined.html) and your computer's user name has a Unicode character (i.e. your name is `Zoë`), any project located in your `My Documents` folder will suffer from this issue. Often simply moving your project to something like `D:\Project` will fix these mysterious issues.
 
-Using other characters outside `a-z`, `A-Z`, and `0-9` such as `@`, `-`, `_`, `,`, `*`, and `#` can also lead to unexpected and hard to track issues on other platforms, source control, and weaker engineering tools. 
+Using other characters outside `a-z`, `A-Z`, and `0-9` such as `@`, `-`, `_`, `,`, `*`, and `#` can also lead to unexpected and hard to track issues on other platforms, source control, and weaker engineering tools. Don't use spaces either, not inside any DCC software to name meshes, nor in any filenames.
 
 <a name="2.2"></a>
 <a name="structure-top-level"><a>
