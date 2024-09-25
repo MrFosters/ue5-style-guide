@@ -295,6 +295,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Texture (Heightmap)     | T_         | _H         |                                |
 | Texture (Specular)      | T_         | _S         |                                  |
 | Texture (Metallic)      | T_         | _M         |                                  |
+| Texture Standard packed AO, Rough, Metal        | T_         | _ARM         | See notes below about [packing](#anc-textures-packing). |
 | Texture (Packed)        | T_         | _*         | See notes below about [packing](#anc-textures-packing). |
 | Texture Cube            | TC_        |            |                                  |
 | Media Texture           | MT_        |            |                                  |
